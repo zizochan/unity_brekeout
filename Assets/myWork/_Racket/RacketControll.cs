@@ -11,7 +11,8 @@ public class RacketControll : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		GetComponent<Rigidbody>().AddForce(
-			transform.right * Input.GetAxisRaw( "Horizontal" ) * Accel,
+//			transform.right * Input.GetAxisRaw( "Horizontal" ) * Accel,
+			transform.right * Input.GetAxisRaw( "Horizontal" ) * Accel * -1,
     		ForceMode.Impulse
 		);
 	}
