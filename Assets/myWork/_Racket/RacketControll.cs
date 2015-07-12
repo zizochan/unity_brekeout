@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class RacketControll : MonoBehaviour {
-	private float Accel = 3000.0f;
+	private float Accel = 2000.0f;
 
 	// Use this for initialization
 	void Start () {

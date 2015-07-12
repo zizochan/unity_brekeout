@@ -36,7 +36,8 @@ public class CreateBlock : MonoBehaviour {
 		float quaternion = Random.Range(0, 180);
 		GameObject block = Instantiate(BlockObject, new Vector3(x, y, z), Quaternion.Euler(0, quaternion, 0)) as GameObject;
 
-		if (totalBlockCount % interval1UPBlockCreate == 0) {
+		// スコア2で一つ1UPブロック作成
+		if (totalBlockCount % interval1UPBlockCreate == 0 || totalBlockCount == 2) {
 			block.GetComponent<BlockControl>().type = 2;
 			block.GetComponent<Renderer>().material.color =  new Color(1f, 0.84f, 0f); // GOLD
 		} else {
