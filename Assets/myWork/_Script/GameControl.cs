@@ -11,6 +11,7 @@ public class GameControl : MonoBehaviour {
 	public int score;
 	public int restBall; 
 	public int gameLevel;
+	public bool reverseCameraFlag;
 
 	// 1:タイトル画面 2:プレイ中 3:ゲームオーバー
 	public int gameFlag;
